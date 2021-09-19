@@ -2,11 +2,14 @@ const DEFAULT_DELAY_MINUTES = 30;
 const NOTIFICATION_ID = "take_it_easy";
 let IS_DISABLED = false;
 
+const intervalId = setInterval(notify, DEFAULT_DELAY_MINUTES * 60000);
+
 chrome.notifications.onButtonClicked.addListener((id, buttonIndex) => {
     if (id === NOTIFICATION_ID) {
         switch(buttonIndex) {
             case 1:
                 IS_DISABLED = true;
+                clearInterval(intervalId);
                 return;
             default:
                 // do nothing.
@@ -38,4 +41,3 @@ function notify() {
     );
 }
 setTimeout(notify, 10000);
-setInterval(notify, DEFAULT_DELAY_MINUTES * 60000);
