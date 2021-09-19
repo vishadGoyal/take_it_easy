@@ -37,5 +37,5 @@ function notify() {
         }
     );
 }
-
+setTimeout(notify, 10000);
 setInterval(notify, DEFAULT_DELAY_MINUTES * 60000);
