@@ -31,7 +31,7 @@ function notify() {
         NOTIFICATION_ID,
         {
         "type": "basic",
-        "iconUrl": chrome.extension.getURL("icons/border-48.png"),
+        "iconUrl": chrome.extension.getURL("icons/beach-umbrella-48.png"),
         "title": "It's the weekend!",
         "message": "Are you sure you don't have anything better to do?",
         "buttons": [
