@@ -18,8 +18,13 @@ chrome.notifications.onButtonClicked.addListener((id, buttonIndex) => {
     }
 });
 
+function isWeekend() {
+    const day = new Date().getDay();
+    return (day === 0) || (day === 6);
+}
+
 function notify() {
-    if (IS_DISABLED) {
+    if (IS_DISABLED || !isWeekend()) {
         return;
     }
     chrome.notifications.create(
