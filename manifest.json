@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "Take it easy!",
-    "version": "1.0",
+    "version": "0.1.0",
   
     "description": "Notifies you if you're using your browser on the weekend",
   
