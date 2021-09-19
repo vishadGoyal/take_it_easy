@@ -11,7 +11,10 @@
     },
   
     "background": {
-        "scripts": ["cron.js"]
+        "scripts": [
+            "cron.js",
+            "browser-polyfill.js"
+        ]
     },
     "permissions": ["notifications"]
 }
