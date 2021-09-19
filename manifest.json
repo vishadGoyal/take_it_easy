@@ -12,8 +12,7 @@
   
     "background": {
         "scripts": [
-            "cron.js",
-            "browser-polyfill.js"
+            "cron.js"
         ]
     },
     "permissions": ["notifications"]
