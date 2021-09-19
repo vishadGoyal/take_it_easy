@@ -1,0 +1,1 @@
+zip -r take_it_easy.zip icons cron.js manifest.json
